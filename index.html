@@ -1,0 +1,249 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Horizen Lounge</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+	<link href="ps/photoswipe.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript" src="js/klass.min.js"></script>
+	<script type="text/javascript" src="ps/code.photoswipe.jquery-3.0.5.min.js"></script>
+	
+	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+	<script src="js/jquery.ui.map.full.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	
+</head> 
+<body> 
+
+<div data-role="page" id="index">
+
+	<div data-role="header" data-theme="a">
+		<h1>Horizen Lounge</h1>
+	</div><!-- /header -->
+	
+		<div class="logo">
+		<img src="img/emptylogo.png" />
+		</div>
+
+	<div data-role="content" style="text-align:center;">
+		
+	
+		
+	<p>	Cork, Horizen Lounge, and Jack London Restaurant, presented by the Horizen
+		Group, are Shanghai’s most exclusive entertainment and dining venues. Horizen
+		集团为您精彩呈现上海最顶级的娱乐和餐饮享受-Cork, Horizen lounge 和 Jack
+
+		London 餐厅</p>
+		
+		<p>The Horizen experience begins with cork. Located at 1 Jinglingdong Road, facing
+		the Huangpu River, cork is a tasting room and retail wine specialist, providing
+		a comfortable setting to enjoy a diverse selection of wines and spirits. Patrons,
+		and club members can enjoy wine tutorials, tastings and food pairings, and are
+		able to make on premise purchases of bottles or place special orders for delivery.
+		Horizen的Cork位于金陵东路1号，正对黄浦江，浦江美景尽收眼底 . 私密 舒适的
+
+		环境让您可以抛开喧嚣繁杂，静静享受美酒和闲暇时光。 客人和俱乐部的会员更
+		可以享受到红酒知识的辅导，顶级红酒品尝以及美酒和美食搭配的知识等，并且可
+		以根据客人的要求进行个性化的订购和送达。</p>
+		
+		<p>Horizen Lounge, on the 23rd floor above cork, features premium wines and spirits,
+		paired with distinct luxury offerings. With its warmth and refinement, it is the
+		ideal environment for the pleasure of conversation and drinks. Guests entering
+		the sumptuous luxury of the lounge are greeted with breathtaking sights. Every
+		table presents unparalleled views of the Bund waterfront and the Pudong Lujiazui
+		District. From classic cocktails for two, to superior bottle service for your parties’
+		entertainment, Horizen Lounge surpasses expectations with its commitment to each
+		guest’s satisfaction. Horizen Lounge 位于Cork之上的23楼，顶级的的美酒香槟，极
+
+		致的美食和舒适的环境让您在此流连忘返。 奢华的潮流地标，炫目的外滩美景，
+		每张桌子都是直面浦东陆家嘴的一线江景。 从两个人的情调小酌到各式私人聚
+		会，Horizen Lounge都能为每位客人带来超乎想象的尊贵体验。</p>
+		
+		<p>Upstairs from the lounge on the 24th floor is Jack London Restaurant. Sharing the
+		same extraordinary views, it provides the elegant sophistication that is expected
+		from Shanghai’s elite tastemakers. The culinary approach of Jack London is based
+		on California Cuisine, a philosophy inspired by the local environment and the
+		diverse cultures of Shanghai. It is a forward thinking approach, encompassing the
+		meticulous execution of classical, progressive, and western culinary techniques.
+		This style of dining allows the guest a diverse experience, with multiple courses that
+		demonstrate a great variety of ingredients, and showcases their beauty with elegant
+		presentations. The exquisite foods of Jack London Restaurant, prepared by Michelin
+		starred Chef Anna Bautista, will be available throughout the night. 24楼是Jack
+
+		London 餐厅。同样炫目的美景，米其林星级厨师Anna Bautista的极致料理正是上
+		海精英们的品味之选。Jack London餐厅的菜肴是基于加州美食的制作理念并融入
+		上海的国际氛围和海派文化。这个超前的理念，包含了经典菜肴的精挑细作，革新
+		以及西式菜肴精湛的烹饪技艺。丰富口感多层次的菜肴和精致的菜式呈现让您享受
+
+		到完全不同的美食体验。</p>
+		
+		<!-- <img src="img/vertigo-banner.jpeg" style="position:relative;left:-400px;"/> -->
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="a" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<a href="#index" data-icon="home" data-iconpos="top">Home</a>
+				<a href="#gallery" data-icon="gallery" data-iconpos="top" >Gallery</a>
+				<a href="#location" data-icon="location" data-iconpos="top">Location</a>
+				<a href="#events" data-icon="events" data-iconpos=."top">Events</a>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+
+</div><!-- /page -->
+
+<div data-role="page" id="location">
+
+	<div data-role="header" data-theme="a">
+		<h1>Location</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" style="text-align:center; padding:0; margin:0;">
+		
+	<div id="map_canvas" style="width:100%; height:100%"></div>
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="a" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<a href="#index" data-icon="home" data-iconpos="top">Home</a>
+				<a href="#gallery" data-icon="gallery" data-iconpos="top" >Gallery</a>
+				<a href="#location" data-icon="location" data-iconpos="top">Location</a>
+				<a href="#events" data-icon="events" data-iconpos=."top">Events</a>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+
+</div><!-- /page -->
+
+<div data-role="page" id="gallery">
+
+	<div data-role="header" data-theme="a">
+		<h1>Gallery</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" style="text-align:center;">
+		
+		<img src="img/emptylogo.png" />
+		
+		<ul id="photo-gal" class="gallery">
+				<li><a href="img/full/1.jpg/" rel="external"><img src="img/thumb/1.jpg" alt="Image 001" /></a></li>
+				<li><a href="img/full/2.jpg" rel="external"><img src="img/thumb/2.jpg" alt="Image 002" /></a></li>
+				<li><a href="img/full/3.jpg" rel="external"><img src="img/thumb/3.jpg" alt="Image 003" /></a></li>
+				<li><a href="img/full/4.jpg" rel="external"><img src="img/thumb/4.jpg" alt="Image 004" /></a></li>
+				<li><a href="img/full/5.jpg" rel="external"><img src="img/thumb/5.jpg" alt="Image 005" /></a></li>
+				<li><a href="img/full/6.jpg" rel="external"><img src="img/thumb/6.jpg" alt="Image 006" /></a></li>
+				<li><a href="img/full/7.jpg" rel="external"><img src="img/thumb/7.jpg" alt="Image 007" /></a></li>
+				<li><a href="img/full/8.jpg" rel="external"><img src="img/thumb/8.jpg" alt="Image 008" /></a></li>
+				<li><a href="img/full/9.jpg" rel="external"><img src="img/thumb/9.jpg" alt="Image 009" /></a></li>
+				<li><a href="img/full/10.jpg" rel="external"><img src="img/thumb/10.jpg" alt="Image 010" /></a></li>
+				<li><a href="img/full/11.jpg" rel="external"><img src="img/thumb/11.jpg" alt="Image 011" /></a></li>
+				<li><a href="img/full/12.jpg" rel="external"><img src="img/thumb/12.jpg" alt="Image 012" /></a></li>
+				<li><a href="img/full/13.jpg" rel="external"><img src="img/thumb/13.jpg" alt="Image 013" /></a></li>
+				<li><a href="img/full/14.jpg" rel="external"><img src="img/thumb/14.jpg" alt="Image 014" /></a></li>
+				<li><a href="img/full/15.jpg" rel="external"><img src="img/thumb/15.jpg" alt="Image 015" /></a></li>
+				<li><a href="img/full/16.jpg" rel="external"><img src="img/thumb/16.jpg" alt="Image 016" /></a></li>
+				<li><a href="img/full/17.jpg" rel="external"><img src="img/thumb/17.jpg" alt="Image 017" /></a></li>
+				<li><a href="img/full/18.jpg" rel="external"><img src="img/thumb/18.jpg" alt="Image 018" /></a></li>
+				<li><a href="img/full/19.jpg" rel="external"><img src="img/thumb/19.jpg" alt="Image 019" /></a></li>
+				<li><a href="img/full/20.jpg" rel="external"><img src="img/thumb/20.jpg" alt="Image 020" /></a></li>
+				<li><a href="img/full/21.jpg" rel="external"><img src="img/thumb/21.jpg" alt="Image 021" /></a></li>
+				<li><a href="img/full/22.jpg" rel="external"><img src="img/thumb/22.jpg" alt="Image 022" /></a></li>
+				<li><a href="img/full/23.jpg" rel="external"><img src="img/thumb/23.jpg" alt="Image 023" /></a></li>
+				<li><a href="img/full/24.jpg" rel="external"><img src="img/thumb/24.jpg" alt="Image 024" /></a></li>
+				<li><a href="img/full/25.jpg" rel="external"><img src="img/thumb/25.jpg" alt="Image 025" /></a></li>
+		</ul>
+	
+	<div style="clear:both;margin-top:30px;margin-bottom:20px;">
+		<img src="img/jl2.png" />
+	</div>
+	
+			<ul id="photo-gal-2" class="gallery">
+					<li><a href="img/full/jl/01.jpg/" rel="external"><img src="img/thumb/jl/01.jpg" alt="Image 001" /></a></li>
+					<li><a href="img/full/jl/02.jpg" rel="external"><img src="img/thumb/jl/02.jpg" alt="Image 002" /></a></li>
+					<li><a href="img/full/jl/03.jpg" rel="external"><img src="img/thumb/jl/03.jpg" alt="Image 003" /></a></li>
+					<li><a href="img/full/jl/04.jpg" rel="external"><img src="img/thumb/jl/04.jpg" alt="Image 004" /></a></li>
+					<li><a href="img/full/jl/05.jpg" rel="external"><img src="img/thumb/jl/05.jpg" alt="Image 005" /></a></li>
+					<li><a href="img/full/jl/06.jpg" rel="external"><img src="img/thumb/jl/06.jpg" alt="Image 006" /></a></li>
+					<li><a href="img/full/jl/07.jpg" rel="external"><img src="img/thumb/jl/07.jpg" alt="Image 007" /></a></li>
+					<li><a href="img/full/jl/08.jpg" rel="external"><img src="img/thumb/jl/08.jpg" alt="Image 008" /></a></li>
+					<li><a href="img/full/jl/09.jpg" rel="external"><img src="img/thumb/jl/09.jpg" alt="Image 009" /></a></li>
+					<li><a href="img/full/jl/10.jpg" rel="external"><img src="img/thumb/jl/10.jpg" alt="Image 010" /></a></li>
+					<li><a href="img/full/jl/11.jpg" rel="external"><img src="img/thumb/jl/11.jpg" alt="Image 011" /></a></li>
+					<li><a href="img/full/jl/12.jpg" rel="external"><img src="img/thumb/jl/12.jpg" alt="Image 012" /></a></li>
+					<li><a href="img/full/jl/13.jpg" rel="external"><img src="img/thumb/jl/13.jpg" alt="Image 013" /></a></li>
+					<li><a href="img/full/jl/14.jpg" rel="external"><img src="img/thumb/jl/14.jpg" alt="Image 014" /></a></li>
+					</ul>
+		
+		<!-- <img src="img/vertigo-banner.jpeg" style="position:relative;left:-400px;"/> -->
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="a" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<a href="#index" data-icon="home" data-iconpos="top">Home</a>
+				<a href="#gallery" data-icon="gallery" data-iconpos="top" >Gallery</a>
+				<a href="#location" data-icon="location" data-iconpos="top">Location</a>
+				<a href="#events" data-icon="events" data-iconpos=."top">Events</a>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="events">
+
+	<div data-role="header" data-theme="a">
+		<h1>Events</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" style="text-align:center;">
+		
+		<h1>Events</h1>
+		
+		<ul id="photo-gal" class="gallery">
+			<li><a href="img/full/events/e1.jpg" rel="external"><img src="img/thumb/events/e1.jpg" alt="" /></a></li>
+			<li><a href="img/full/events/e2.jpg" rel="external"><img src="img/thumb/events/e2.jpg" alt="" /></a></li>
+			<li><a href="img/full/events/e3.jpg" rel="external"><img src="img/thumb/events/e3.jpg" alt="" /></a></li>
+			<li><a href="img/full/events/e4.jpg" rel="external"><img src="img/thumb/events/e4.jpg" alt="" /></a></li>
+		</ul>
+		
+		<h1>Contact</h1>
+		
+		<p>HORIZEN Lounge</p>
+		<p>ZHONG SHAN DONG ER road 12, 23rd floor, near JIN LING DONG road</p>
+		<p><a href="http://www.horizen.cn">http://www.horizen.cn</a></p>
+		<p><a href="mailto:info@horizen.cn">info@horizen.cn</a></p>
+		<p>RSVP and table bookings: +21 53076869</p>
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="a" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<a href="#index" data-icon="home" data-iconpos="top">Home</a>
+				<a href="#gallery" data-icon="gallery" data-iconpos="top" >Gallery</a>
+				<a href="#location" data-icon="location" data-iconpos="top">Location</a>
+				<a href="#events" data-icon="events" data-iconpos=."top">Events</a>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+
+</div><!-- /page -->
+
+
+</body>
+</html>
