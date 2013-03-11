@@ -3,14 +3,14 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "io.cordova.hello-cordova"
         version   = "2.0.0">
-    <name>Hello Cordova</name>
+    <name>Horizen Lounge</name>
 
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        And android app for Horizen Lounge in Shanghai, China
     </description>
 
-    <author href="http://cordova.io" email="callback-dev@incubator.apache.org">
-        Apache Cordova Team
+    <author href="http://primerapps.com" email="info@primerdesigns.com">
+        Primer Apps
     </author>
 
     <icon src="res/icon/cordova_512.png"        width="512" height="512" />
